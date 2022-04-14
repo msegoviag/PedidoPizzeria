@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PedidoPizzeria</string>
+    <string name="ayuda" translatable="false">Help</string>
+    <string name="acerca_de">About...</string>
+    <string name="hacer_pedido">Order Now</string>
+    <string name="pizzeria_bartolo">Bartolo\'s Pizza</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PedidoPizzeria</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="hacer_pedido">Hacer Pedido</string>
+    <string name="pizzeria_bartolo">Pizzeria Bartolo</string>
+
+    <string-array name="tipo_pedido">
+        <item> </item>
+        <item>A Domicilio</item>
+        <item>Establecimiento</item>
+    </string-array>
+</resources>

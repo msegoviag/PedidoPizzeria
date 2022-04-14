@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ayuda">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/volverMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a diam suscipit, rhoncus ipsum eget, tempor metus. Nullam arcu elit, rutrum ut vulputate vitae, ullamcorper id risus. Aenean vel luctus nisl. Duis dapibus lacinia viverra. Sed viverra, mauris et sagittis pretium, mauris libero tincidunt ligula, sit amet egestas augue ipsum non est. Aenean ex neque, sollicitudin eget risus id, tristique lacinia tortor. Quisque elementum tincidunt nunc nec eleifend. Donec fringilla metus sapien, eget ultrices sem mattis a. Praesent ultricies hendrerit orci, bibendum consectetur nibh tincidunt et. Nam tincidunt urna a iaculis ultricies. Maecenas et urna a orci tempus finibus sed non arcu. Aliquam vel diam neque. Fusce vitae sem et dui porttitor luctus. Morbi erat odio, lacinia eget volutpat non, pulvinar non erat. Sed varius velit nec enim efficitur vehicula.  Morbi ornare libero vel nulla facilisis ultricies. Aenean viverra est quis dapibus euismod. Aenean vel odio in augue tincidunt scelerisque. Vivamus ultricies justo quam, vel tempor est vulputate sit amet. Nulla cursus vel turpis tincidunt porttitor. Praesent dapibus eget tortor in consectetur. Duis metus ipsum, imperdiet nec urna nec, faucibus blandit dui. Pellentesque tempus vel metus vel vehicula.  In interdum rhoncus leo, sit amet scelerisque mauris faucibus in. Mauris sagittis ultrices lectus. Vivamus felis ex, sodales id eleifend sit amet, dictum venenatis massa. Duis sed sem ac ipsum rhoncus ullamcorper. Sed interdum urna varius aliquam sagittis. Maecenas tincidunt ultricies finibus. Vivamus aliquet nisi vitae urna iaculis, ac mollis neque efficitur. Integer posuere tincidunt vestibulum. Suspendisse condimentum posuere sapien in vestibulum. Nam sed metus eleifend, feugiat elit in, ultrices risus. Proin cursus eu nisl et volutpat. Quisque a magna condimentum, consequat lacus vel, aliquet libero.  Nulla eu efficitur sem. Pellentesque vel orci consectetur, placerat nunc vel, vehicula libero. Donec ac diam a nulla efficitur congue. Cras tempus cursus dolor, in gravida erat venenatis sit amet. Donec vulputate metus metus, ut ultricies justo convallis eget. Nullam vel ex gravida, suscipit nisl in, interdum leo. Sed finibus efficitur ornare. Quisque nulla ligula, pellentesque sollicitudin leo vitae, luctus pretium nibh. Suspendisse laoreet vehicula vulputate. Nulla semper neque sed iaculis ornare. Vivamus iaculis sapien et neque gravida fermentum eu nec enim.  Proin vel erat molestie purus facilisis cursus. Nunc nec pharetra mauris. Quisque congue rutrum erat, et porta mauris maximus non. Nulla fermentum, purus vitae tincidunt scelerisque, tortor diam mollis lacus, in egestas leo metus nec lorem. Morbi eget ipsum enim. Ut varius magna et orci eleifend rutrum. Curabitur consequat bibendum nisi, vitae tempus arcu vestibulum ut. Maecenas vitae dui in nisl efficitur iaculis. Aliquam lectus erat, feugiat id tortor et, bibendum eleifend nunc. Curabitur ut laoreet lacus. Etiam eu consequat arcu, aliquet consequat tortor."
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/volverMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="volverMain"
+        android:text="VOLVER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

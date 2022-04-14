@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="76dp"
+        android:text="NOMBRE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRecog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="47dp"
+        android:text="RECOGIDA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerRecogida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTel" />
+
+    <TextView
+        android:id="@+id/textViewDirec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="DIRECCIÓN"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvdireccion"
+        app:layout_constraintEnd_toStartOf="@+id/tvdireccion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTel"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="75dp"
+        android:text="TELÉFONO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDirec"
+        app:layout_constraintEnd_toStartOf="@+id/tvNombre"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNombre"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Miguel Segovia"
+        android:inputType="textPersonName"
+        android:text="Miguel Segovia"
+        app:layout_constraintBottom_toTopOf="@+id/tvTelefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="309dp"
+        android:ems="10"
+        android:hint="608131919"
+        android:inputType="phone"
+        android:text="608131919"
+        app:layout_constraintBottom_toTopOf="@+id/btContinuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+
+    <EditText
+        android:id="@+id/tvdireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="6dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewDirec"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecog" />
+
+    <Spinner
+        android:id="@+id/spinnerRecogida"
+        android:layout_width="207dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="62dp"
+        android:entries="@array/tipo_pedido"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="@+id/tvdireccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewRecog"
+        app:layout_constraintTop_toTopOf="@+id/textViewTel" />
+
+    <Button
+        android:id="@+id/btVolver"
+        android:layout_width="170dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="144dp"
+        android:onClick="volverPantallaPrincipal"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="#CA2A2A"
+        android:text="Volver"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdireccion"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btContinuar"
+        android:layout_width="170dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="continuarElegirPizza"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="#43A047"
+        android:text="Continuar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btVolver" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

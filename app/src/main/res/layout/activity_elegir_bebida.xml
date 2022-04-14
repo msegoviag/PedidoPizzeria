@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ElegirBebida">
+
+    <Button
+        android:id="@+id/btAddAgua"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="addAgua"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContadorAgua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/btAddCola"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="38dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="addCola"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContadorCola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btAddCerveza"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="91dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="addCerveza"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btVolverPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/botonVolver"
+        android:onClick="volverPantallaPizza"
+        android:text="VOLVER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btLimpiarBebida"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btLimpiarBebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="limpiarValoresBebida"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btContinuarInforme"
+        app:layout_constraintStart_toEndOf="@+id/btVolverPizza" />
+
+    <Button
+        android:id="@+id/btContinuarInforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="continuarInformeTotal"
+        android:text="Continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btLimpiarBebida" />
+
+    <TextView
+        android:id="@+id/tvCerveza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="33dp"
+        android:text="Cerveza"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/tvAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="25dp"
+        android:text="Agua"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="20dp"
+        android:text="Coca-Cola"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginEnd="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvContadorCerveza"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/tvCerveza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:srcCompat="@drawable/cerveza1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="127dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btAddAgua"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/tvCola"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/cola" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="119dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkMayorEdad"
+        app:layout_constraintEnd_toStartOf="@+id/tvContadorAgua"
+        app:layout_constraintStart_toEndOf="@+id/tvAgua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCola"
+        app:srcCompat="@drawable/agua" />
+
+    <CheckBox
+        android:id="@+id/checkMayorEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="17dp"
+        android:text="¿Mayor Edad?"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/tvContadorAgua" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="76dp"
+        android:text="3€"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="9dp"
+        android:text="2€"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btAddCola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="1€"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btAddAgua"
+        app:layout_constraintEnd_toStartOf="@+id/tvContadorCola"
+        app:layout_constraintStart_toStartOf="@+id/tvContadorCola" />
+
+    <TextView
+        android:id="@+id/tvContadorCerveza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="22dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btAddCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/btAddCerveza" />
+
+    <TextView
+        android:id="@+id/tvContadorCola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/btAddCola" />
+
+    <TextView
+        android:id="@+id/tvContadorAgua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="260dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

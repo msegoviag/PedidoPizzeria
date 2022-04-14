@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ElegirPizza">
+
+    <TextView
+        android:id="@+id/tvContador4Quesos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btContinuarBebida"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrecioB4" />
+
+    <TextView
+        android:id="@+id/tvContadorMediterranea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="5dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvPrecioMedit"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrecioMedit" />
+
+    <TextView
+        android:id="@+id/tvContadorCarbonara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textViewCarbonara"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCarbonara" />
+
+    <Button
+        android:id="@+id/btAddQuesos"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="addCuatroQuesos"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btAddMediterranea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvContador4Quesos"
+        app:layout_constraintTop_toTopOf="@+id/btAddMediterranea" />
+
+    <Button
+        android:id="@+id/btAddMediterranea"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="addMediterranea"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btLimpiar"
+        app:layout_constraintEnd_toStartOf="@+id/tvPrecioB4"
+        app:layout_constraintStart_toStartOf="@+id/btVolver"
+        app:layout_constraintTop_toTopOf="@+id/tvPrecioMedit" />
+
+    <Button
+        android:id="@+id/btAddCarbonara"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="addCarbonara"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/btAddQuesos"
+        app:layout_constraintTop_toTopOf="@+id/textViewCarbonara" />
+
+    <TextView
+        android:id="@+id/tvPrecioB4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="7€"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvContador4Quesos"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="16dp"
+        android:text="Pizza Barbacoa"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="22dp"
+        android:text="Pizza Mediterránea"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAddBarbacoa" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="268dp"
+        android:text="Pizza 4 Quesos"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContadorMediterranea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="44dp"
+        android:text="Pizza Carbonara"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContadorBarbacoa"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barbacoa" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCarbonara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btAddBarbacoa"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/carbonara" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPrecioMedit"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:srcCompat="@drawable/mediterranea" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/btAddQuesos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:srcCompat="@drawable/cuatroquesos" />
+
+    <Button
+        android:id="@+id/btAddBarbacoa"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="addBarbacoaPizza"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/tvContadorBarbacoa"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvPrecioB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9€"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCarbonara"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textViewCarbonara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="10dp"
+        android:text="8 €"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btAddCarbonara"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPrecioMedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="150dp"
+        android:text="8€"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btAddMediterranea" />
+
+    <TextView
+        android:id="@+id/tvContadorBarbacoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvPrecioB"
+        app:layout_constraintTop_toBottomOf="@+id/tvPrecioB" />
+
+    <Button
+        android:id="@+id/btVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#CA2A2A"
+        android:onClick="volverRegistro"
+        android:text="VOLVER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btContinuarBebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorBoton"
+        android:onClick="continuarElegirBebida"
+        android:text="Continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="limpiarValores"
+        android:text="Limpiar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btAddMediterranea" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
